@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact and Notice Form</title>
+</head>
+<body>
+
+<h1>Contact and Notice Form</h1>
+
+<h2>Add Contact</h2>
+<form action="/addContact" method="post">
+    <label for="contactId">Contact ID:</label>
+    <input type="number" id="contactId" name="contactId" required><br><br>
+
+    <label for="contactName">Name:</label>
+    <input type="text" id="contactName" name="contactName" required><br><br>
+
+    <label for="contactPhone">Phone:</label>
+    <input type="text" id="contactPhone" name="contactPhone" required><br><br>
+
+    <input type="submit" value="Add Contact">
+</form>
+
+<h2>Add Notice</h2>
+<form action="/addNotice" method="post">
+    <label for="noticeId">Notice ID:</label>
+    <input type="number" id="noticeId" name="noticeId" required><br><br>
+
+    <label for="noticeTitle">Title:</label>
+    <input type="text" id="noticeTitle" name="noticeTitle" required><br><br>
+
+    <label for="noticeContent">Content:</label>
+    <input type="text" id="noticeContent" name="noticeContent" required><br><br>
+
+    <label for="contactId">Contact ID:</label>
+    <input type="number" id="contactId" name="contactId" required><br><br>
+
+    <input type="submit" value="Add Notice">
+</form>
+
+</body>
+</html>
