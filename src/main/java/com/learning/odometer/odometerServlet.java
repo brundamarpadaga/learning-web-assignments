@@ -45,6 +45,7 @@ public class odometerServlet extends HttpServlet {
 	 
 	 @Override
 	 protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		 
 		 String action = req.getParameter("action");
 		    try {
 		      controller.performAction(action);
